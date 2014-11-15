@@ -6,18 +6,21 @@ Servidor e Cliente Bluetooth para interpretação e execução de comandos nos s
 Esta trabalho possui um aplicativo cliente Android para mover até seis servomotores de 180º. Um servidor em Java interpreta os dados vindos do cliente e os envia ao arduino que por sua vez executa as mudanças de ângulo.
 
 Os seguintes arquivos usados para fazer a conexão com a porta serial devem ser copiados na pasta do Java nos caminhos:
+
 RXTXcomm.jar ---> <JAVA_HOME>\jre\lib\ext
+
 rxtxSerial.dll ---> <JAVA_HOME>\jre\bin
+
 rxtxParallel.dll ---> <JAVA_HOME>\jre\bin
 
 Sketh  na pasta Arduino/Servo.ino deve ser carregada dentro do Arduino pela própria IDE do microcontrolador. 
 http://arduino.cc/en/Main/Software
 
 As bibliotecas externas devem ser adicionadas dentro do projeto no NetBeans e se encontram no diretório "lib", são elas:
-jcommon.jar
-bluecove-2.1.1-SNAPSHOT.jar
-bluecove-gpl-2.1.1-SNAPSHOT.jar
-RXTXcomm.jar
+jcommon.jar;
+bluecove-2.1.1-SNAPSHOT.jar;
+bluecove-gpl-2.1.1-SNAPSHOT.jar;
+RXTXcomm.jar;
 
 Execute o RobotController (Servidor) pelo Netbeans.
 
